@@ -8,11 +8,12 @@ import org.springframework.web.client.RestTemplate;
 public class SpringConfig {
 
     /**
-     * 创建RestTemplate 并注入Spring容器
+     * 创建RestTemplate 并注入Spring容器中
      * @return
      */
     @Bean
     public RestTemplate restTemplate(){
+
         return new RestTemplate();
     }
 }
