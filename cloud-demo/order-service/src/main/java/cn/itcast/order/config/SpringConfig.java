@@ -11,6 +11,7 @@ public class SpringConfig {
      * 创建RestTemplate 并注入Spring容器中
      * @return
      */
+//    @Bean(name = "hello")
     @Bean
     public RestTemplate restTemplate(){
 

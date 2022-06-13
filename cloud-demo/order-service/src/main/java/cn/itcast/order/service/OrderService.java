@@ -7,13 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 @Service
 public class OrderService {
 
     @Autowired
     private OrderMapper orderMapper;
 
-    @Autowired
+    @Autowired//根据类型自动注入
+//    @Resource(name = "hello")//根据名称自动注入
     private RestTemplate restTemplate;
 
     public Order queryOrderById(Long orderId) {
