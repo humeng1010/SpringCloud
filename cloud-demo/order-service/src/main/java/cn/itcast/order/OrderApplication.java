@@ -14,10 +14,6 @@ public class OrderApplication {
         SpringApplication.run(OrderApplication.class, args);
     }
 
-//转移到了配置类中
-//    @Bean
-//    public RestTemplate restTemplate(){
-//        return new RestTemplate();
-//    }
+
 
 }
